@@ -1,0 +1,34 @@
+<!-- 
+Лабораторная работа 1 по дисциплине МРЗвИС
+Выполнена студентом группы 721701
+БГУИР Кацубо Вадим Эдуардович
+
+1. Алгоритм вычисления произведения пары 6-разрядных чисел 
+   умножением с младших разрядов со сдвигом частичной суммы вправо. 
+2. Учебные материалы по JavaScript
+3. Учебные материалы по HTML 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Произведение</title>
+  <script src="Main.js"></script>
+</head>
+<body>
+    <label for="FirstLine">Первый вектор:</label>
+    <input type="text" id="FirstLine" placeholder="Введите элементы первый вектор"/> <br>
+    <label for="SecondLine">Второй вектор:</label>
+    <input type="text" id="SecondLine" placeholder="Введите элементы второго вектора"/> <br>
+    <label for="Time">Время одного такта:</label>
+    <input type="text" id="Time" placeholder="Введите время обработки этапа"/> <br>
+    <button id="Start" onclick="readInput()"; >Внести данные</button>
+    <button id="AddRow" onclick="addRow()"; >Добавить строку</button>
+    <button id="Remove" onclick="removeTable()"; >Очистить</button>
+    <div id="Inf"></div>
+    <table id="Table" border='5'>
+      <caption>Результат</caption>
+    </table>
+</body>
+</html>
